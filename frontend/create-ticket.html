@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Support Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Create Support Ticket</h1>
+
+        <form>
+
+            <label>Customer Name:</label>
+            <input type="text" name="customerName" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Issue Title:</label>
+            <input type="text" name="issueTitle" required>
+
+            <label>Issue Description:</label>
+            <textarea name="description" rows="5" required></textarea>
+
+            <label>Category:</label>
+            <select name="category">
+                <option>Login Issue</option>
+                <option>Network Issue</option>
+                <option>Software Issue</option>
+                <option>Hardware Issue</option>
+                <option>Other</option>
+            </select>
+
+            <label>Priority:</label>
+            <select name="priority">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+                <option>Critical</option>
+            </select>
+
+            <button type="submit">Submit Ticket</button>
+
+        </form>
+
+        <div style="text-align: center;">
+            <a href="/">
+                <button type="button">Back to Home</button>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
